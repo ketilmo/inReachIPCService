@@ -37,7 +37,7 @@ deploy:
     - script:
         name: Push to dokku
         code: |
-          git push dokku master
+          git push dokku master --force
   after-steps:
     - mies/email-notify:
         from: alerts@wercker.com
