@@ -1,8 +1,11 @@
 {
   "name": "inReachIPCService",
-  "version": "0.0.0",
+  "version": "0.0.0",  
+  "engines": {
+    "node": "0.10.x"
+  },
   "description": "An API for receiving location data from Delorme inReach's Portal Connect service.",
-  "main": "app.js",
+  "main": "node app.js",
   "scripts": {
     "test": "mocha"
   },
