@@ -22,5 +22,13 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ketilmo/inReachIPCService/issues"
+  },
+  "dependencies": {
+    "restify": "~2.8.1",
+    "mongojs": "~0.13.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.3",
+    "should": "~4.0.4"
   }
 }
