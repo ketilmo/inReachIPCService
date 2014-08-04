@@ -1,0 +1,26 @@
+{
+  "name": "inReachIPCService",
+  "version": "0.0.0",
+  "description": "An API for receiving location data from Delorme inReach's Portal Connect service.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ketilmo/inReachIPCService.git"
+  },
+  "keywords": [
+    "delorme",
+    "inreach",
+    "ipc",
+    "service",
+    "web",
+    "service"
+  ],
+  "author": "Ketil Moland Olsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ketilmo/inReachIPCService/issues"
+  }
+}
