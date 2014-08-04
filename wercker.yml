@@ -28,7 +28,7 @@ deploy:
           git init
           git config --global user.name "wercker"
           git config --global user.email "pleasemailus@wercker.com"
-          git remote add dokku dokku@$SERVER_HOSTNAME:inReachIPCService
+          git remote add dokku dokku@$SERVER_HOSTNAME:inreachipcservice
     - script:
         name: Add everything to the repository
         code: |
