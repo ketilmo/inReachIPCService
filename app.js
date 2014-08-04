@@ -1,12 +1,8 @@
 var restify = require('restify'),
     mongojs = require('mongojs');
 
-var env = process.env.NODE_ENV || 'production';
-var port = process.env.PORT || 80;
-
-if ('production' == env) {
-   port = process.env.PORT || 80;
-}
+var env = process.env.NODE_ENV || 'development';
+var port = process.env.PORT || 3600;
 
 if ('development' == env) {
    port = process.env.PORT || 3600;
@@ -15,6 +11,11 @@ if ('development' == env) {
 if ('test' == env) {
    port = process.env.PORT || 3600;
 }
+
+if ('production' == env) {
+   port = process.env.PORT || 80;
+}
+
 
 
 var server = restify.createServer({
