@@ -5,8 +5,9 @@
     "node": "0.10.x"
   },
   "description": "An API for receiving location data from Delorme inReach's Portal Connect service.",
-  "main": "node app.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha"
   },
   "repository": {

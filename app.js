@@ -1,7 +1,21 @@
 var restify = require('restify'),
     mongojs = require('mongojs');
 
-var port = process.env.PORT || 3600;
+var env = process.env.NODE_ENV || 'production';
+var port = process.env.PORT || 80;
+
+if ('production' == env) {
+   port = process.env.PORT || 80;
+}
+
+if ('development' == env) {
+   port = process.env.PORT || 3600;
+}
+
+if ('test' == env) {
+   port = process.env.PORT || 3600;
+}
+
 
 var server = restify.createServer({
   name: 'inReachIPCService'
@@ -10,8 +24,6 @@ var server = restify.createServer({
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
-
-
 
 server.listen(port, function () {
     console.log("Server listening on port " + port);
